@@ -18,8 +18,11 @@ class Home extends Component {
 
     return (
       <div>
-        <p>this is home page</p>
-        <Link to="/about">goto About</Link>
+        <p>This is the Home Page.</p>
+        <Link to="/about">goto the About Page</Link>
+        <br />
+        <Link to="/counter">goto the Counter Page</Link>
+        <br />
         <div>当前数：{number}</div>
         <div>
           <Button className="btn" type="primary" onClick={increase}>增加</Button>

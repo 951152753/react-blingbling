@@ -1,5 +1,9 @@
 # dependencies
 *.js
+*.jsx
 !src/**/*.js
 
 src/*.js
+
+
+/src
