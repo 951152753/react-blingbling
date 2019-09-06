@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import 'styles/index.scss'
+import './styles/public.less'
 import App from 'routes/index'
 import registerServiceWorker from './registerServiceWorker'
 

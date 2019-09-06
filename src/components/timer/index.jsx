@@ -20,15 +20,11 @@ countState.resetTimer = action(() => {
 
 // 创建一个react组件, 它能够响应 observable 的变化, 即使用 @observer
 @observer
-export default class Counter extends React.Component {
+export default class Timer extends React.Component {
     render() {
         return (
             <div>
-                <p>This is the Counter Page.</p>
-                <Link to="/home">goto Home Page</Link>
-                <br />
-                <Link to="/about">goto About Page</Link>
-
+                <p>This is the Timer Page.</p>
                 <div className="counter">
                     <h4>time passed:{countState.timer}</h4>
                     <button onClick={countState.resetTimer}>reset timer</button>
@@ -37,31 +33,3 @@ export default class Counter extends React.Component {
         )
     }
 }
-
-// // create State object
-// let countState = observable({ timer: 0 });
-
-// // define action
-// setInterval(
-//     action(() => {
-//         countState.timer += 1;
-//     }),
-//     1000
-// );
-
-// countState.resetTimer = action(() => {
-//     countState.timer = 0;
-// });
-
-// // create observer
-// let Counter = observer(({ countState }) => {
-//     return (
-//         <div className="Counter">
-//             <h1>Time passed
-// : {countState.timer}</h1>
-//             <button onClick={countState.resetTimer}>reset timer</button>
-//         </div>
-//     );
-// });
-
-// export default <Counter countState = {countState} />;
